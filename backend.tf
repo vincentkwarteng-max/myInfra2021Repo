@@ -8,13 +8,3 @@ terraform {
     encrypt        = true
   }
 }
-{
-  "Sid": "TerraformS3NativeLocking",
-  "Effect": "Allow",
-  "Action": [
-    "s3:GetObject",
-    "s3:PutObject",
-    "s3:DeleteObject"
-  ],
-  "Resource": "arn:aws:s3:::cyloc-terraform-state-lab-2026/terraform.tfstate.tflock"
-}
